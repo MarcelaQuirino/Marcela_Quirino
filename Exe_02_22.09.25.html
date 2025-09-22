@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const notaProva1 = 8;
+        const notaProva2 = 6;
+        const faltas = 3;
+
+        const media = (notaProva1 + notaProva2)/2;
+        const passouPorMedia = media >= 7;
+        console.log("Passou por média?", passouPorMedia);
+        const passouPorFaltas = faltas < 5;
+        console.log("Passou por faltas?", passouPorFaltas);
+        const resultadoFinal = passouPorMedia && passouPorFaltas;
+        console.log("Aluno aprovado?", resultadoFinal);
+
+    </script>
+    
+    
+</body>
+</html>
