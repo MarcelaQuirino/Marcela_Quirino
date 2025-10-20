@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let tarefas = []
+        console.log("Minha lista inicial:", tarefas);
+
+        tarefas.push("1.Java")
+        tarefas.push("2.Escola")
+        tarefas.push("3.Enem")
+        console.log("Lista:" , tarefas);
+
+        console.log("Tarefa 2 é: " , tarefas [1]);
+
+        tarefas[0] = "1.Java";
+        console.log("Lista alterada" , tarefas);
+
+        let tarefaRemovida = tarefas.pop();
+        console.log("Tarefa removida:" , tarefaRemovida);
+        console.log("Lista final:" , tarefas);
+
+        console.log("Agora tenho" , tarefas.length, "tarefas");
+
+    </script>
+    
+</body>
+</html>
