@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pessoa = {
+            nome: "Carlos",
+            idade: 25,
+
+            dizerOla: function(){
+                console.log(`Olá, meu nome é ${this.nome}!`);
+            }, 
+            mostrarIdade: function(){
+                console.log(`Eu tenho ${this.idade} anos.`);
+            }
+        };
+
+        pessoa.dizerOla();
+        pessoa.mostrarIdade();
+    </script>
+</body>
+</html>
