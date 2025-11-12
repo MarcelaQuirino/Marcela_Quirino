@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Aula 12 - Navegação</title>
+        </head>
+    </html>
+    
+</body>
+<div class="container">
+    <h1 id="titulo-principal">Titulo da Página</h1>
+    <p>Um paragrafo de introdução</p>
+</div>
+<ul id="lista-principal">
+    <li>item 1</li>
+    <li class="item-destaque">item 2
+        (Destaque)</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        </ul>
+
+        <div class="footer">
+            <p>Copyright 2025</p>
+        </div>
+
+        <script>
+
+        let itemDestaque = document.querySelector(".item-destaque");
+        console.log("item Destaque:",itemDestaque);
+
+        let lista = itemDestaque.parentElement;
+        console.log("O Pai do item é.",lista);
+
+        let itemAnterior = itemDestaque.previousElementSibling;
+        console.log("O irmão anterior é.",itemAnterior);//Item 1
+
+        let proximoItem = itemDestaque.nextElementSibling;
+        console.log("O Próximo irmão é:", proximoItem);//Item 3
+
+        let copyright = document.querySelector(".footer p");
+        console.log("Texto do Copyright", copyright);
+
+        </script>
+    </li>
+</ul>
+</html>
